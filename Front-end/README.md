@@ -32,6 +32,7 @@
            ├── data/
            │   └── modalidadesData.js
            └── modules/
+               ├── photoAlbums.js
                ├── uiEffects.js
                └── modalidadesSchedule.js
 
@@ -40,6 +41,7 @@
    - Apresentação institucional, estrutura física, Missão, Visão e Valores[cite: 34, 35, 49]
    - Portfólio filtrável por categoria e Grade de Horários (previsão 2027)
      filtrável por dia da semana com botão rápido de solicitação de vaga[cite: 35, 36, 52, 54]
+   - Álbuns de fotos por modalidade e projeto, com ícones e links das redes sociais
    - Seção de Espetáculos e Projetos (Dream Celebration, Performance Awards -
      AAB - NY, Semana Viva a Dança, Summer Dance, Ballet nas Escolas)[cite: 38, 49]
    - Formulário de aula experimental/matrícula com montagem automática de
@@ -52,7 +54,5 @@
    - E-mail: studiorafaelamunoz@gmail.com[cite: 39]
 
    PENDÊNCIAS / PRÓXIMOS PASSOS
-   - Inserir a logomarca oficial em Img/ e substituir os espaços reservados pelas
-     fotografias autorizadas do Studio (aulas, espetáculos e estrutura)[cite: 40, 49].
    - Validar eventuais atualizações de grade, valores/planos e dados cadastrais[cite: 33, 37].
    ========================================================================== -->

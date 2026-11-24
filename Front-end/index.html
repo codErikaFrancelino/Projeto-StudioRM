@@ -1,66 +1,3 @@
-<!-- ==========================================================================
-   README.MD — STUDIO RAFAELA MUÑOZ (SRM)
-   Projeto Front-end | Guarabira - PB
-   ==========================================================================
-
-   SOBRE O PROJETO
-   Aplicação web institucional e interativa desenvolvida para o Studio Rafaela
-   Muñoz (SRM), escola de ballet e formação artística fundada em 16 de novembro
-   de 2019 em Guarabira - PB, atuando na cidade e no Brejo Paraibano[cite: 33, 34].
-   - Certificação: Escola de Ballet Certificada AAB - NY[cite: 34]
-   - Metodologia: Credenciada pela Psicopedagodança[cite: 34]
-   - Lema: "Encantando e Realizando Sonhos Através da Dança!"[cite: 34]
-   - Endereço: Av. Dom Pedro II, n° 228, 3º andar, Centro, Guarabira/PB
-     (Prédio da Padaria Cristal)[cite: 39]
-
-   TECNOLOGIAS UTILIZADAS
-   - HTML5 semântico (estrutura das seções, tabelas e formulário)[cite: 49]
-   - CSS3 (variáveis, layout responsivo, tipografia clássica/moderna e animações)[cite: 51]
-   - JavaScript (ES Modules: organização por dados, efeitos de interface e lógica)[cite: 50, 52, 53, 54]
-
-   ESTRUTURA DE PASTAS (PROJETO-STUDIORM)
-   Projeto-StudioRM/
-   └── Front-end/
-       ├── index.html
-       ├── Css/
-       │   └── studio.css
-       ├── Img/              (logo oficial e fotos de aulas, espetáculos e sede)[cite: 40]
-       └── Js/
-           ├── studio.js
-           ├── data/
-           │   └── modalidadesData.js
-           └── modules/
-               ├── uiEffects.js
-               └── modalidadesSchedule.js
-
-   FUNCIONALIDADES IMPLEMENTADAS
-   - Navegação responsiva com menu mobile, rolagem suave e botão voltar ao topo[cite: 51, 53]
-   - Apresentação institucional, estrutura física, Missão, Visão e Valores[cite: 34, 35, 49]
-   - Portfólio filtrável por categoria e Grade de Horários (previsão 2027)
-     filtrável por dia da semana com botão rápido de solicitação de vaga[cite: 35, 36, 52, 54]
-   - Seção de Espetáculos e Projetos (Dream Celebration, Performance Awards -
-     AAB - NY, Semana Viva a Dança, Summer Dance, Ballet nas Escolas)[cite: 38, 49]
-   - Formulário de aula experimental/matrícula com montagem automática de
-     mensagem para o WhatsApp comercial do Studio[cite: 39, 52]
-
-   CANAIS OFICIAIS
-   - Instagram: https://www.instagram.com/studiorafaelamunoz/[cite: 39]
-   - TikTok: https://www.tiktok.com/@rafaelamunozz
-   - WhatsApp: https://api.whatsapp.com/send?phone=5583991488967[cite: 39]
-   - E-mail: studiorafaelamunoz@gmail.com[cite: 39]
-
-   PENDÊNCIAS / PRÓXIMOS PASSOS
-   - Inserir a logomarca oficial em Img/ e substituir os espaços reservados pelas
-     fotografias autorizadas do Studio (aulas, espetáculos e estrutura)[cite: 40, 49].
-   - Validar eventuais atualizações de grade, valores/planos e dados cadastrais[cite: 33, 37].
-   ========================================================================== -->
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -80,6 +17,24 @@
   <link rel="stylesheet" href="Css/studio.css" />
 </head>
 <body>
+  <svg class="icon-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-instagram" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2" />
+      <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+      <circle cx="17.5" cy="6.8" r="1.2" fill="currentColor" />
+    </symbol>
+    <symbol id="icon-tiktok" viewBox="0 0 24 24">
+      <path d="M19.6 6.7a5.8 5.8 0 0 1-4-1.6v8.1a6.1 6.1 0 1 1-5.3-6.1v3.2a2.9 2.9 0 1 0 2.1 2.8V2h3.2a5.8 5.8 0 0 0 4 4v.7Z" fill="currentColor" />
+    </symbol>
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+      <path d="M20.2 11.8a8.2 8.2 0 0 1-12.1 7.2L3 20l1.1-4.9a8.2 8.2 0 1 1 16.1-3.3Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+      <path d="M8.2 7.8c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.7 1.7c.1.3.1.5-.1.7l-.5.6c-.2.2-.2.4 0 .7.5.8 1.2 1.5 2 2 .3.2.5.2.7-.1l.6-.7c.2-.2.4-.3.7-.2l1.6.8c.3.1.4.3.4.5 0 .4-.2 1.1-.6 1.4-.4.4-1 .6-1.7.5-.7-.1-1.7-.5-2.9-1.3-1.4-.9-2.4-2.1-2.9-3.1-.5-.9-.6-1.7-.5-2.2.1-.5.5-1.1.9-1.3Z" fill="currentColor" />
+    </symbol>
+    <symbol id="icon-email" viewBox="0 0 24 24">
+      <rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8" />
+      <path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+    </symbol>
+  </svg>
 
   <!-- BARRA SUPERIOR INSTITUCIONAL -->
   <div class="topbar">
@@ -92,15 +47,19 @@
         <span>Guarabira - PB</span>
       </div>
       <div class="topbar-links">
-        <a href="https://www.instagram.com/studiorafaelamunoz/" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a href="https://www.tiktok.com/@rafaelamunozz" target="_blank" rel="noopener noreferrer">TikTok</a>
+        <a class="social-link" href="https://www.instagram.com/studiorafaelamunoz/" target="_blank" rel="noopener noreferrer">
+          <svg class="social-icon"><use href="#icon-instagram"></use></svg> Instagram
+        </a>
+        <a class="social-link" href="https://www.tiktok.com/@rafaelamunozz" target="_blank" rel="noopener noreferrer">
+          <svg class="social-icon"><use href="#icon-tiktok"></use></svg> TikTok
+        </a>
         <a
           href="https://api.whatsapp.com/send?phone=5583991488967&text=Ol%C3%A1!%20Gostaria%20de%20informações%20sobre%20as%20aulas%20e%20matrículas%20no%20Studio%20Rafaela%20Muñoz."
           target="_blank"
           rel="noopener noreferrer"
-          class="topbar-cta"
+          class="topbar-cta social-link"
         >
-          WhatsApp (83) 99148-8967
+          <svg class="social-icon"><use href="#icon-whatsapp"></use></svg> WhatsApp (83) 99148-8967
         </a>
       </div>
     </div>
@@ -110,9 +69,7 @@
   <header class="site-header" id="topo">
     <div class="container header-inner">
       <a href="#inicio" class="brand-logo" aria-label="Studio Rafaela Muñoz — Início">
-        <!-- /* logo oficial do Studio Rafaela Muñoz (PNG transparente em Img/) */ -->
-        <span class="brand-script">Studio</span>
-        <span class="brand-main">Rafaela Muñoz</span>
+        <img class="brand-mark" src="Img/LogoOficial.png" alt="Studio Rafaela Muñoz">
       </a>
 
       <button
@@ -147,7 +104,7 @@
     </div>
   </header>
 
-  <!-- ABA / SEÇÃO 01: INÍCIO -->
+  <!-- SEÇÃO 01: INÍCIO -->
   <main>
     <section id="inicio" class="hero-section">
       <div class="container hero-grid">
@@ -181,12 +138,12 @@
 
         <div class="hero-media reveal">
           <div class="media-frame hero-frame">
-            <!-- /* foto principal de destaque do Studio Rafaela Muñoz (Img/hero-studio.jpg) */ -->
-            <div class="media-placeholder">
-              <span class="placeholder-tag">Espaço Reservado — Foto Institucional</span>
-              <strong>Studio Rafaela Muñoz</strong>
-              <p>Insira a foto principal de dança ou da sede em Guarabira - PB.</p>
-            </div>
+            <img
+              class="hero-photo"
+              src="Img/Celebration.jpeg"
+              alt="Bailarinas do Studio Rafaela Muñoz em apresentação do Dream Celebration"
+              fetchpriority="high"
+            >
           </div>
           <div class="hero-floating-card">
             <span class="floating-kicker">Destaque Anual</span>
@@ -196,7 +153,6 @@
         </div>
       </div>
 
-      <!-- FAIXA DE NÚMEROS / DIFERENCIAIS -->
       <div class="container stats-strip reveal">
         <div class="stat-item">
           <span class="stat-number" data-target="2019">2019</span>
@@ -217,7 +173,7 @@
       </div>
     </section>
 
-    <!-- ABA / SEÇÃO 02: O STUDIO (MISSÃO, VISÃO, VALORES E ESTRUTURA) -->
+    <!-- SEÇÃO 02: O STUDIO -->
     <section id="sobre" class="section section-cream">
       <div class="container">
         <div class="section-heading reveal">
@@ -236,6 +192,11 @@
             <p>
               O ensino alia o rigor técnico do ballet e de outras modalidades ao acompanhamento pedagógico individual, respeitando cada faixa etária e etapa de aprendizagem.
             </p>
+
+            <figure class="context-photo">
+              <img src="Img/Inauguracao.jpeg" alt="Registro da inauguração do Studio Rafaela Muñoz" loading="lazy" decoding="async">
+              <figcaption>Inauguração do Studio</figcaption>
+            </figure>
 
             <div class="structure-box">
               <h3>Estrutura Física da Unidade Guarabira - PB</h3>
@@ -280,10 +241,35 @@
             </article>
           </div>
         </div>
+
+        <div class="photo-section reveal">
+          <div class="photo-section-heading">
+            <p class="eyebrow">Espaço &amp; Comunidade</p>
+            <h3 class="photo-section-title">Um studio feito de encontros</h3>
+          </div>
+          <div class="album-grid">
+            <button class="album-card album-trigger" type="button" data-album="studio" aria-haspopup="dialog" aria-controls="photo-album">
+              <span class="album-card-image">
+                <img src="Img/FotoSala.jpeg" alt="" loading="lazy" decoding="async">
+              </span>
+              <span class="album-card-copy">
+                <span class="album-card-count">1 foto</span>
+                <strong>O espaço do Studio</strong>
+                <span class="album-card-action">Abrir álbum <span aria-hidden="true">↗</span></span>
+              </span>
+            </button>
+          </div>
+          <template id="album-studio" data-title="O espaço do Studio">
+            <figure class="album-photo">
+              <img src="Img/FotoSala.jpeg" alt="Sala de ballet do Studio, com espelhos e barras" loading="lazy" decoding="async">
+              <figcaption>Sala de ballet</figcaption>
+            </figure>
+          </template>
+        </div>
       </div>
     </section>
 
-    <!-- ABA / SEÇÃO 03: MODALIDADES & GRADE 2027 -->
+    <!-- SEÇÃO 03: MODALIDADES & GRADE 2027 -->
     <section id="modalidades" class="section section-white">
       <div class="container">
         <div class="section-heading reveal">
@@ -304,7 +290,6 @@
               <button type="button" class="filter-pill" data-category="formacao">Formação &amp; Projetos</button>
             </div>
           </div>
-
           <div id="modalities-list" class="modalities-grid"></div>
         </div>
 
@@ -339,10 +324,138 @@
             </table>
           </div>
         </div>
+
+        <div class="photo-section reveal">
+          <div class="photo-section-heading">
+            <p class="eyebrow">Nossa comunidade</p>
+            <h3 class="photo-section-title">A dança em todas as fases</h3>
+          </div>
+          <div class="album-grid">
+            <button class="album-card album-trigger" type="button" data-album="adulto" aria-haspopup="dialog" aria-controls="photo-album">
+              <span class="album-card-image">
+                <img src="Img/Adulto.jpeg" alt="" loading="lazy" decoding="async">
+              </span>
+              <span class="album-card-copy">
+                <span class="album-card-count">6 fotos</span>
+                <strong>Ballet adulto</strong>
+                <span class="album-card-action">Abrir álbum <span aria-hidden="true">↗</span></span>
+              </span>
+            </button>
+            <button class="album-card album-trigger" type="button" data-album="infantil" aria-haspopup="dialog" aria-controls="photo-album">
+              <span class="album-card-image">
+                <img src="Img/TurmaInfantil.jpeg" alt="" loading="lazy" decoding="async">
+              </span>
+              <span class="album-card-copy">
+                <span class="album-card-count">1 foto</span>
+                <strong>Ballet infantil</strong>
+                <span class="album-card-action">Abrir álbum <span aria-hidden="true">↗</span></span>
+              </span>
+            </button>
+            <button class="album-card album-trigger" type="button" data-album="jazz" aria-haspopup="dialog" aria-controls="photo-album">
+              <span class="album-card-image">
+                <img src="Img/Jazz.jpeg" alt="" loading="lazy" decoding="async">
+              </span>
+              <span class="album-card-copy">
+                <span class="album-card-count">3 fotos</span>
+                <strong>Jazz</strong>
+                <span class="album-card-action">Abrir álbum <span aria-hidden="true">↗</span></span>
+              </span>
+            </button>
+            <button class="album-card album-trigger" type="button" data-album="pontas" aria-haspopup="dialog" aria-controls="photo-album">
+              <span class="album-card-image">
+                <img src="Img/Pontas.jpeg" alt="" loading="lazy" decoding="async">
+              </span>
+              <span class="album-card-copy">
+                <span class="album-card-count">3 fotos</span>
+                <strong>Preparação para pontas</strong>
+                <span class="album-card-action">Abrir álbum <span aria-hidden="true">↗</span></span>
+              </span>
+            </button>
+            <button class="album-card album-trigger" type="button" data-album="sapateado" aria-haspopup="dialog" aria-controls="photo-album">
+              <span class="album-card-image">
+                <img src="Img/Sapateado.jpeg" alt="" loading="lazy" decoding="async">
+              </span>
+              <span class="album-card-copy">
+                <span class="album-card-count">1 foto</span>
+                <strong>Sapateado</strong>
+                <span class="album-card-action">Abrir álbum <span aria-hidden="true">↗</span></span>
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="album-templates" hidden>
+          <template id="album-adulto" data-title="Ballet adulto">
+            <figure class="album-photo">
+              <img src="Img/Adulto.jpeg" alt="Aula de ballet adulto no Studio" loading="lazy" decoding="async">
+              <figcaption>Ballet adulto</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/Adulto1.jpeg" alt="Alunos da turma adulta durante uma aula de dança" loading="lazy" decoding="async">
+              <figcaption>Turma adulta</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/Adulto2.jpeg" alt="Turma de ballet adulto reunida no Studio" loading="lazy" decoding="async">
+              <figcaption>Ballet para adultos</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/Turma.jpeg" alt="Alunos da turma adulta durante atividade no Studio" loading="lazy" decoding="async">
+              <figcaption>Atividade da turma adulta</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/TurmaAdulto.jpeg" alt="Turma adulta reunida após a aula" loading="lazy" decoding="async">
+              <figcaption>Turma adulta</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/AcaoStudio.jpeg" alt="Alunos reunidos durante uma atividade no Studio" loading="lazy" decoding="async">
+              <figcaption>Ação no Studio</figcaption>
+            </figure>
+          </template>
+          <template id="album-infantil" data-title="Ballet infantil">
+            <figure class="album-photo">
+              <img src="Img/TurmaInfantil.jpeg" alt="Turma infantil reunida no Studio" loading="lazy" decoding="async">
+              <figcaption>Turma infantil</figcaption>
+            </figure>
+          </template>
+          <template id="album-jazz" data-title="Jazz">
+            <figure class="album-photo">
+              <img src="Img/Jazz.jpeg" alt="Turma de jazz durante ensaio coreográfico" loading="lazy" decoding="async">
+              <figcaption>Turma de jazz</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/Jazz1.jpeg" alt="Alunos da turma de jazz em apresentação" loading="lazy" decoding="async">
+              <figcaption>Jazz em cena</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/Jazz2.jpeg" alt="Registro da turma de jazz do Studio" loading="lazy" decoding="async">
+              <figcaption>Turma de jazz</figcaption>
+            </figure>
+          </template>
+          <template id="album-pontas" data-title="Preparação para pontas">
+            <figure class="album-photo">
+              <img src="Img/Pontas.jpeg" alt="Bailarinas praticando técnica de pontas" loading="lazy" decoding="async">
+              <figcaption>Preparação para pontas</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/Pontas1.jpeg" alt="Aula de técnica clássica para preparação para pontas" loading="lazy" decoding="async">
+              <figcaption>Técnica clássica</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/Pontas2.jpeg" alt="Alunas durante exercício de ballet na ponta" loading="lazy" decoding="async">
+              <figcaption>Estudo de pontas</figcaption>
+            </figure>
+          </template>
+          <template id="album-sapateado" data-title="Sapateado">
+            <figure class="album-photo">
+              <img src="Img/Sapateado.jpeg" alt="Turma praticando sapateado no Studio" loading="lazy" decoding="async">
+              <figcaption>Sapateado</figcaption>
+            </figure>
+          </template>
+        </div>
       </div>
     </section>
 
-    <!-- ABA / SEÇÃO 04: ESPETÁCULOS & PROJETOS -->
+    <!-- SEÇÃO 04: ESPETÁCULOS & PROJETOS -->
     <section id="espetaculos" class="section section-cream">
       <div class="container">
         <div class="section-heading reveal">
@@ -354,55 +467,165 @@
         </div>
 
         <div class="projects-grid">
-          <article class="project-card reveal">
-            <div class="media-frame project-frame">
-              <!-- /* foto do espetáculo Dream Celebration (Img/dream-celebration.jpg) */ -->
-              <div class="media-placeholder compact">
-                <span class="placeholder-tag">Foto de Espetáculo</span>
-                <strong>Dream Celebration</strong>
-                <p>Edição 2026: Encanto: A Casa que Dança (07/11/2026).</p>
-              </div>
-            </div>
-            <h3>Dream Celebration</h3>
-            <p>
-              Principal espetáculo anual do Studio, reunindo direção artística, roteiro, criação coreográfica, dramaturgia, figurinos, cenografia, iluminação e recursos audiovisuais.
-            </p>
-          </article>
+          <button class="project-card album-trigger reveal" type="button" data-album="celebration" aria-haspopup="dialog" aria-controls="photo-album">
+            <span class="media-frame project-frame">
+              <img src="Img/Celebration1.jpeg" alt="" loading="lazy" decoding="async">
+            </span>
+            <span class="project-card-copy">
+              <span class="album-card-count">4 fotos</span>
+              <strong>Dream Celebration</strong>
+              <span>Principal espetáculo anual do Studio, com criação coreográfica, dramaturgia, figurinos e apresentações.</span>
+              <span class="album-card-action">Abrir álbum <span aria-hidden="true">↗</span></span>
+            </span>
+          </button>
 
-          <article class="project-card reveal">
-            <div class="media-frame project-frame">
-              <!-- /* foto de aula ou avaliação AAB - NY / Psicopedagodança (Img/aula-certificacao.jpg) */ -->
-              <div class="media-placeholder compact">
-                <span class="placeholder-tag">Foto de Aula / Certificação</span>
-                <strong>Performance Awards — AAB - NY</strong>
-                <p>Avaliação técnica e certificação internacional dos bailarinos.</p>
-              </div>
-            </div>
-            <h3>Performance Awards (AAB - NY)</h3>
-            <p>
-              Programa internacional de avaliação e reconhecimento do desenvolvimento técnico e artístico, aliado à metodologia Psicopedagodança.
-            </p>
-          </article>
+          <button class="project-card album-trigger reveal" type="button" data-album="performance" aria-haspopup="dialog" aria-controls="photo-album">
+            <span class="media-frame project-frame">
+              <img src="Img/AAB.jpeg" alt="" loading="lazy" decoding="async">
+            </span>
+            <span class="project-card-copy">
+              <span class="album-card-count">7 fotos</span>
+              <strong>Performance Awards — AAB</strong>
+              <span>Avaliação internacional e reconhecimento do desenvolvimento técnico e artístico.</span>
+              <span class="album-card-action">Abrir álbum <span aria-hidden="true">↗</span></span>
+            </span>
+          </button>
 
-          <article class="project-card reveal">
-            <div class="media-frame project-frame">
-              <!-- /* foto de projetos especiais ou Ballet nas Escolas (Img/projetos-especiais.jpg) */ -->
-              <div class="media-placeholder compact">
-                <span class="placeholder-tag">Foto de Projetos &amp; Aulas</span>
-                <strong>Semana Viva a Dança &amp; Parcerias</strong>
-                <p>Summer Dance, oficinas, vivências e Ballet nas Escolas.</p>
-              </div>
-            </div>
-            <h3>Projetos Especiais &amp; Parcerias</h3>
-            <p>
-              Inclui Semana Viva a Dança, Summer Dance, Ballet nas Escolas em instituições parceiras, festivais, workshops e apresentações culturais.
-            </p>
-          </article>
+          <button class="project-card album-trigger reveal" type="button" data-album="svd" aria-haspopup="dialog" aria-controls="photo-album">
+            <span class="media-frame project-frame">
+              <img src="Img/SVD.jpeg" alt="" loading="lazy" decoding="async">
+            </span>
+            <span class="project-card-copy">
+              <span class="album-card-count">8 fotos</span>
+              <strong>Semana Viva a Dança</strong>
+              <span>Encontros de dança, expressão artística e convivência.</span>
+              <span class="album-card-action">Abrir álbum <span aria-hidden="true">↗</span></span>
+            </span>
+          </button>
+
+          <button class="project-card album-trigger reveal" type="button" data-album="parcerias" aria-haspopup="dialog" aria-controls="photo-album">
+            <span class="media-frame project-frame">
+              <img src="Img/SummerDance.jpeg" alt="" loading="lazy" decoding="async">
+            </span>
+            <span class="project-card-copy">
+              <span class="album-card-count">5 fotos</span>
+              <strong>Projetos &amp; parcerias</strong>
+              <span>Summer Dance, Sarau Dance e atividades em escolas parceiras.</span>
+              <span class="album-card-action">Abrir álbum <span aria-hidden="true">↗</span></span>
+            </span>
+          </button>
+        </div>
+
+        <div class="album-templates" hidden>
+          <template id="album-celebration" data-title="Dream Celebration">
+            <figure class="album-photo">
+              <img src="Img/Celebration.jpeg" alt="Bailarinas do Studio Rafaela Muñoz em apresentação do Dream Celebration" loading="lazy" decoding="async">
+              <figcaption>Dream Celebration</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/Celebration1.jpeg" alt="Bailarinos do Studio no espetáculo Dream Celebration" loading="lazy" decoding="async">
+              <figcaption>Dream Celebration — elenco</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/Celebration2.jpeg" alt="Registro do espetáculo Dream Celebration" loading="lazy" decoding="async">
+              <figcaption>Dream Celebration — apresentação</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/Celebration 3.jpeg" alt="Bailarinos em cena no espetáculo Dream Celebration" loading="lazy" decoding="async">
+              <figcaption>Dream Celebration — no palco</figcaption>
+            </figure>
+          </template>
+          <template id="album-performance" data-title="Performance Awards — AAB">
+            <figure class="album-photo">
+              <img src="Img/AAB.jpeg" alt="Entrega de certificado Performance Awards da American Academy of Ballet" loading="lazy" decoding="async">
+              <figcaption>Performance Awards — certificação</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/AAB1.jpeg" alt="Registro do programa Performance Awards da AAB" loading="lazy" decoding="async">
+              <figcaption>Performance Awards — registro 1</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/AAB2.jpeg" alt="Aluna durante avaliação Performance Awards da AAB" loading="lazy" decoding="async">
+              <figcaption>Performance Awards — avaliação</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/AAB3.jpeg" alt="Bailarinos participantes do Performance Awards da AAB" loading="lazy" decoding="async">
+              <figcaption>Performance Awards — bailarinos</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/AAB4.jpeg" alt="Registro de certificação Performance Awards da AAB" loading="lazy" decoding="async">
+              <figcaption>Performance Awards — certificação</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/AAB5.jpeg" alt="Turma reunida no evento Performance Awards da AAB" loading="lazy" decoding="async">
+              <figcaption>Performance Awards — turma</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/AAB6.jpeg" alt="Bailarinos durante atividade Performance Awards da AAB" loading="lazy" decoding="async">
+              <figcaption>Performance Awards — atividade</figcaption>
+            </figure>
+          </template>
+          <template id="album-svd" data-title="Semana Viva a Dança">
+            <figure class="album-photo">
+              <img src="Img/SVD.jpeg" alt="Participantes da Semana Viva a Dança" loading="lazy" decoding="async">
+              <figcaption>Semana Viva a Dança</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/SVD1.jpeg" alt="Participantes da Semana Viva a Dança em atividade" loading="lazy" decoding="async">
+              <figcaption>Semana Viva a Dança — registro 1</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/SVD2.jpeg" alt="Apresentação da Semana Viva a Dança" loading="lazy" decoding="async">
+              <figcaption>Semana Viva a Dança — apresentação</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/SVD3.jpeg" alt="Bailarinos reunidos durante a Semana Viva a Dança" loading="lazy" decoding="async">
+              <figcaption>Semana Viva a Dança — bailarinos</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/SVD4.jpeg" alt="Registro de atividade da Semana Viva a Dança" loading="lazy" decoding="async">
+              <figcaption>Semana Viva a Dança — atividade</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/SVD5.jpeg" alt="Alunos participando da Semana Viva a Dança" loading="lazy" decoding="async">
+              <figcaption>Semana Viva a Dança — alunos</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/SVD6.jpeg" alt="Apresentação artística da Semana Viva a Dança" loading="lazy" decoding="async">
+              <figcaption>Semana Viva a Dança — palco</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/SVD7.jpeg" alt="Turma reunida na Semana Viva a Dança" loading="lazy" decoding="async">
+              <figcaption>Semana Viva a Dança — turma</figcaption>
+            </figure>
+          </template>
+          <template id="album-parcerias" data-title="Projetos &amp; parcerias">
+            <figure class="album-photo">
+              <img src="Img/SummerDance.jpeg" alt="Bailarinos no projeto Summer Dance" loading="lazy" decoding="async">
+              <figcaption>Summer Dance</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/SummerDance1.jpeg" alt="Atividade artística do projeto Summer Dance" loading="lazy" decoding="async">
+              <figcaption>Summer Dance — vivência</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/SarauDance.jpeg" alt="Participantes do projeto Sarau Dance" loading="lazy" decoding="async">
+              <figcaption>Sarau Dance</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/Escola.jpeg" alt="Aula de ballet em uma escola parceira" loading="lazy" decoding="async">
+              <figcaption>Ballet nas escolas</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <img src="Img/Escola1.jpeg" alt="Alunos participando de uma atividade de dança em escola parceira" loading="lazy" decoding="async">
+              <figcaption>Projeto escolar</figcaption>
+            </figure>
+          </template>
         </div>
       </div>
     </section>
 
-    <!-- ABA / SEÇÃO 05: MATRÍCULAS & CONTATO -->
+    <!-- SEÇÃO 05: MATRÍCULAS & CONTATO -->
     <section id="contato" class="section section-white">
       <div class="container">
         <div class="section-heading reveal">
@@ -421,27 +644,35 @@
                 <strong>Endereço:</strong>
                 <span>Av. Dom Pedro II, n° 228, 3º andar, Centro, Guarabira/PB (Prédio da Padaria Cristal)</span>
               </li>
+              <li class="location-photo-item">
+                <figure class="context-photo">
+                  <img src="Img/Localizacao.jpeg" alt="Fachada e localização do Studio Rafaela Muñoz em Guarabira" loading="lazy" decoding="async">
+                  <figcaption>Localização do Studio</figcaption>
+                </figure>
+              </li>
               <li>
                 <strong>WhatsApp Comercial:</strong>
-                <a href="https://api.whatsapp.com/send?phone=5583991488967" target="_blank" rel="noopener noreferrer">
-                  (83) 99148-8967
+                <a class="social-link" href="https://api.whatsapp.com/send?phone=5583991488967" target="_blank" rel="noopener noreferrer">
+                  <svg class="social-icon"><use href="#icon-whatsapp"></use></svg> (83) 99148-8967
                 </a>
               </li>
               <li>
                 <strong>Instagram:</strong>
-                <a href="https://www.instagram.com/studiorafaelamunoz/" target="_blank" rel="noopener noreferrer">
-                  @studiorafaelamunoz
+                <a class="social-link" href="https://www.instagram.com/studiorafaelamunoz/" target="_blank" rel="noopener noreferrer">
+                  <svg class="social-icon"><use href="#icon-instagram"></use></svg> @studiorafaelamunoz
                 </a>
               </li>
               <li>
                 <strong>TikTok:</strong>
-                <a href="https://www.tiktok.com/@rafaelamunozz" target="_blank" rel="noopener noreferrer">
-                  @rafaelamunozz
+                <a class="social-link" href="https://www.tiktok.com/@rafaelamunozz" target="_blank" rel="noopener noreferrer">
+                  <svg class="social-icon"><use href="#icon-tiktok"></use></svg> @rafaelamunozz
                 </a>
               </li>
               <li>
                 <strong>E-mail Institucional:</strong>
-                <a href="mailto:studiorafaelamunoz@gmail.com">studiorafaelamunoz@gmail.com</a>
+                <a class="social-link" href="mailto:studiorafaelamunoz@gmail.com">
+                  <svg class="social-icon"><use href="#icon-email"></use></svg> studiorafaelamunoz@gmail.com
+                </a>
               </li>
             </ul>
 
@@ -476,18 +707,7 @@
 
             <div class="form-field">
               <label for="modalidade-interesse">Modalidade / Turma de Interesse</label>
-              <select id="modalidade-interesse" name="modalidadeInteresse">
-                <option value="Ballet Preparatório (3 a 5 anos — Terça 17h)">Ballet Preparatório (3 a 5 anos — Terça 17h)</option>
-                <option value="Ballet Infantil Manhã (6 a 9 anos — Ter/Qui 10h30)">Ballet Infantil Manhã (6 a 9 anos — Ter/Qui 10h30)</option>
-                <option value="Ballet Infantil Tarde (6 a 9 anos — Ter/Qui 15h)">Ballet Infantil Tarde (6 a 9 anos — Ter/Qui 15h)</option>
-                <option value="Jazz Infantil (Ter/Qui 16h)">Jazz Infantil (Ter/Qui 16h)</option>
-                <option value="Ballet Juvenil (10 a 14 anos — Ter/Qui 19h)">Ballet Juvenil (10 a 14 anos — Ter/Qui 19h)</option>
-                <option value="Ballet Adulto Iniciante (Sexta 10h30)">Ballet Adulto Iniciante (Sexta 10h30)</option>
-                <option value="Ballet Adulto Básico (Ter/Qui 20h)">Ballet Adulto Básico (Ter/Qui 20h)</option>
-                <option value="Ballet Adulto Elementar (Sexta 20h)">Ballet Adulto Elementar (Sexta 20h)</option>
-                <option value="Jazz Adulto (Sexta 19h)">Jazz Adulto (Sexta 19h)</option>
-                <option value="Outras Modalidades / Aula Experimental">Outras Modalidades / Aula Experimental</option>
-              </select>
+              <select id="modalidade-interesse" name="modalidadeInteresse"></select>
             </div>
 
             <div class="form-field">
@@ -520,13 +740,32 @@
       </div>
 
       <div class="footer-social">
-        <a href="https://www.instagram.com/studiorafaelamunoz/" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a href="https://www.tiktok.com/@rafaelamunozz" target="_blank" rel="noopener noreferrer">TikTok</a>
-        <a href="https://api.whatsapp.com/send?phone=5583991488967" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-        <a href="mailto:studiorafaelamunoz@gmail.com">E-mail</a>
+        <a class="social-link" href="https://www.instagram.com/studiorafaelamunoz/" target="_blank" rel="noopener noreferrer">
+          <svg class="social-icon"><use href="#icon-instagram"></use></svg> Instagram
+        </a>
+        <a class="social-link" href="https://www.tiktok.com/@rafaelamunozz" target="_blank" rel="noopener noreferrer">
+          <svg class="social-icon"><use href="#icon-tiktok"></use></svg> TikTok
+        </a>
+        <a class="social-link" href="https://api.whatsapp.com/send?phone=5583991488967" target="_blank" rel="noopener noreferrer">
+          <svg class="social-icon"><use href="#icon-whatsapp"></use></svg> WhatsApp
+        </a>
+        <a class="social-link" href="mailto:studiorafaelamunoz@gmail.com">
+          <svg class="social-icon"><use href="#icon-email"></use></svg> E-mail
+        </a>
       </div>
     </div>
   </footer>
+
+  <dialog id="photo-album" class="photo-album" aria-labelledby="photo-album-title">
+    <div class="album-dialog-header">
+      <div>
+        <p class="eyebrow">Galeria de fotos</p>
+        <h2 id="photo-album-title" class="photo-section-title"></h2>
+      </div>
+      <button class="album-close" type="button" aria-label="Fechar álbum">×</button>
+    </div>
+    <div id="photo-album-content" class="photo-gallery album-gallery"></div>
+  </dialog>
 
   <!-- BOTÃO FLUTUANTE VOLTAR AO TOPO -->
   <button type="button" id="back-to-top" class="back-to-top" aria-label="Voltar ao topo">

@@ -1,5 +1,5 @@
 /**
- * Dados das modalidades e grade prevista para 2027 do Studio Rafaela Muñoz (Guarabira - PB).
+ * Dados de modalidades e grade prevista para 2027 — Studio Rafaela Muñoz.
  */
 export const MODALITIES_DATA = [
   { name: "Baby Ballet", group: "Ballet", category: "ballet" },
@@ -20,76 +20,13 @@ export const MODALITIES_DATA = [
 ];
 
 export const SCHEDULE_2027 = [
-  {
-    modality: "Ballet Infantil - Manhã",
-    ageGroup: "6 a 9 anos",
-    daysLabel: "Terça e quinta",
-    days: ["terca", "quinta"],
-    time: "10h30",
-    interestValue: "Ballet Infantil Manhã (6 a 9 anos — Ter/Qui 10h30)",
-  },
-  {
-    modality: "Ballet Adulto Iniciante",
-    ageGroup: "Adulto",
-    daysLabel: "Sexta-feira",
-    days: ["sexta"],
-    time: "10h30",
-    interestValue: "Ballet Adulto Iniciante (Sexta 10h30)",
-  },
-  {
-    modality: "Ballet Infantil - Tarde",
-    ageGroup: "6 a 9 anos",
-    daysLabel: "Terça e quinta",
-    days: ["terca", "quinta"],
-    time: "15h",
-    interestValue: "Ballet Infantil Tarde (6 a 9 anos — Ter/Qui 15h)",
-  },
-  {
-    modality: "Jazz Infantil",
-    ageGroup: "Infantil",
-    daysLabel: "Terça e quinta",
-    days: ["terca", "quinta"],
-    time: "16h",
-    interestValue: "Jazz Infantil (Ter/Qui 16h)",
-  },
-  {
-    modality: "Ballet Preparatório",
-    ageGroup: "3 a 5 anos",
-    daysLabel: "Terça-feira",
-    days: ["terca"],
-    time: "17h",
-    interestValue: "Ballet Preparatório (3 a 5 anos — Terça 17h)",
-  },
-  {
-    modality: "Ballet Juvenil",
-    ageGroup: "10 a 14 anos",
-    daysLabel: "Terça e quinta",
-    days: ["terca", "quinta"],
-    time: "19h",
-    interestValue: "Ballet Juvenil (10 a 14 anos — Ter/Qui 19h)",
-  },
-  {
-    modality: "Jazz Adulto",
-    ageGroup: "Adulto",
-    daysLabel: "Sexta-feira",
-    days: ["sexta"],
-    time: "19h",
-    interestValue: "Jazz Adulto (Sexta 19h)",
-  },
-  {
-    modality: "Ballet Adulto Básico",
-    ageGroup: "Adulto",
-    daysLabel: "Terça e quinta",
-    days: ["terca", "quinta"],
-    time: "20h",
-    interestValue: "Ballet Adulto Básico (Ter/Qui 20h)",
-  },
-  {
-    modality: "Ballet Adulto Elementar",
-    ageGroup: "Adulto",
-    daysLabel: "Sexta-feira",
-    days: ["sexta"],
-    time: "20h",
-    interestValue: "Ballet Adulto Elementar (Sexta 20h)",
-  },
+  { modality: "Ballet Infantil - Manhã", ageGroup: "6 a 9 anos", daysLabel: "Terça e quinta", days: ["terca", "quinta"], time: "10h30" },
+  { modality: "Ballet Adulto Iniciante", ageGroup: "Adulto", daysLabel: "Sexta-feira", days: ["sexta"], time: "10h30" },
+  { modality: "Ballet Infantil - Tarde", ageGroup: "6 a 9 anos", daysLabel: "Terça e quinta", days: ["terca", "quinta"], time: "15h" },
+  { modality: "Jazz Infantil", ageGroup: "Infantil", daysLabel: "Terça e quinta", days: ["terca", "quinta"], time: "16h" },
+  { modality: "Ballet Preparatório", ageGroup: "3 a 5 anos", daysLabel: "Terça-feira", days: ["terca"], time: "17h" },
+  { modality: "Ballet Juvenil", ageGroup: "10 a 14 anos", daysLabel: "Terça e quinta", days: ["terca", "quinta"], time: "19h" },
+  { modality: "Jazz Adulto", ageGroup: "Adulto", daysLabel: "Sexta-feira", days: ["sexta"], time: "19h" },
+  { modality: "Ballet Adulto Básico", ageGroup: "Adulto", daysLabel: "Terça e quinta", days: ["terca", "quinta"], time: "20h" },
+  { modality: "Ballet Adulto Elementar", ageGroup: "Adulto", daysLabel: "Sexta-feira", days: ["sexta"], time: "20h" },
 ];
