@@ -1,0 +1,538 @@
+<!-- ==========================================================================
+   README.MD — STUDIO RAFAELA MUÑOZ (SRM)
+   Projeto Front-end | Guarabira - PB
+   ==========================================================================
+
+   SOBRE O PROJETO
+   Aplicação web institucional e interativa desenvolvida para o Studio Rafaela
+   Muñoz (SRM), escola de ballet e formação artística fundada em 16 de novembro
+   de 2019 em Guarabira - PB, atuando na cidade e no Brejo Paraibano[cite: 33, 34].
+   - Certificação: Escola de Ballet Certificada AAB - NY[cite: 34]
+   - Metodologia: Credenciada pela Psicopedagodança[cite: 34]
+   - Lema: "Encantando e Realizando Sonhos Através da Dança!"[cite: 34]
+   - Endereço: Av. Dom Pedro II, n° 228, 3º andar, Centro, Guarabira/PB
+     (Prédio da Padaria Cristal)[cite: 39]
+
+   TECNOLOGIAS UTILIZADAS
+   - HTML5 semântico (estrutura das seções, tabelas e formulário)[cite: 49]
+   - CSS3 (variáveis, layout responsivo, tipografia clássica/moderna e animações)[cite: 51]
+   - JavaScript (ES Modules: organização por dados, efeitos de interface e lógica)[cite: 50, 52, 53, 54]
+
+   ESTRUTURA DE PASTAS (PROJETO-STUDIORM)
+   Projeto-StudioRM/
+   └── Front-end/
+       ├── index.html
+       ├── Css/
+       │   └── studio.css
+       ├── Img/              (logo oficial e fotos de aulas, espetáculos e sede)[cite: 40]
+       └── Js/
+           ├── studio.js
+           ├── data/
+           │   └── modalidadesData.js
+           └── modules/
+               ├── uiEffects.js
+               └── modalidadesSchedule.js
+
+   FUNCIONALIDADES IMPLEMENTADAS
+   - Navegação responsiva com menu mobile, rolagem suave e botão voltar ao topo[cite: 51, 53]
+   - Apresentação institucional, estrutura física, Missão, Visão e Valores[cite: 34, 35, 49]
+   - Portfólio filtrável por categoria e Grade de Horários (previsão 2027)
+     filtrável por dia da semana com botão rápido de solicitação de vaga[cite: 35, 36, 52, 54]
+   - Seção de Espetáculos e Projetos (Dream Celebration, Performance Awards -
+     AAB - NY, Semana Viva a Dança, Summer Dance, Ballet nas Escolas)[cite: 38, 49]
+   - Formulário de aula experimental/matrícula com montagem automática de
+     mensagem para o WhatsApp comercial do Studio[cite: 39, 52]
+
+   CANAIS OFICIAIS
+   - Instagram: https://www.instagram.com/studiorafaelamunoz/[cite: 39]
+   - TikTok: https://www.tiktok.com/@rafaelamunozz
+   - WhatsApp: https://api.whatsapp.com/send?phone=5583991488967[cite: 39]
+   - E-mail: studiorafaelamunoz@gmail.com[cite: 39]
+
+   PENDÊNCIAS / PRÓXIMOS PASSOS
+   - Inserir a logomarca oficial em Img/ e substituir os espaços reservados pelas
+     fotografias autorizadas do Studio (aulas, espetáculos e estrutura)[cite: 40, 49].
+   - Validar eventuais atualizações de grade, valores/planos e dados cadastrais[cite: 33, 37].
+   ========================================================================== -->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio Rafaela Muñoz — Escola de Ballet em Guarabira - PB</title>
+  <meta
+    name="description"
+    content="Studio Rafaela Muñoz (SRM) em Guarabira - PB: Escola de Ballet Certificada AAB - NY e Credenciada pela Psicopedagodança. Encantando e Realizando Sonhos Através da Dança!"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="Css/studio.css" />
+</head>
+<body>
+
+  <!-- BARRA SUPERIOR INSTITUCIONAL -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-certifications">
+        <span>Certificada AAB - NY</span>
+        <span aria-hidden="true">•</span>
+        <span>Credenciada Psicopedagodança</span>
+        <span aria-hidden="true">•</span>
+        <span>Guarabira - PB</span>
+      </div>
+      <div class="topbar-links">
+        <a href="https://www.instagram.com/studiorafaelamunoz/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.tiktok.com/@rafaelamunozz" target="_blank" rel="noopener noreferrer">TikTok</a>
+        <a
+          href="https://api.whatsapp.com/send?phone=5583991488967&text=Ol%C3%A1!%20Gostaria%20de%20informações%20sobre%20as%20aulas%20e%20matrículas%20no%20Studio%20Rafaela%20Muñoz."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="topbar-cta"
+        >
+          WhatsApp (83) 99148-8967
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER PRINCIPAL -->
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand-logo" aria-label="Studio Rafaela Muñoz — Início">
+        <!-- /* logo oficial do Studio Rafaela Muñoz (PNG transparente em Img/) */ -->
+        <span class="brand-script">Studio</span>
+        <span class="brand-main">Rafaela Muñoz</span>
+      </a>
+
+      <button
+        type="button"
+        id="menu-toggle"
+        class="menu-toggle"
+        aria-label="Abrir ou fechar menu"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">O Studio</a>
+        <a href="#modalidades">Modalidades &amp; Grade</a>
+        <a href="#espetaculos">Espetáculos &amp; Projetos</a>
+        <a href="#contato">Matrículas &amp; Contato</a>
+      </nav>
+
+      <a
+        href="https://api.whatsapp.com/send?phone=5583991488967&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20aula%20experimental%20no%20Studio%20Rafaela%20Muñoz."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-gold header-btn"
+      >
+        Aula Experimental
+      </a>
+    </div>
+  </header>
+
+  <!-- ABA / SEÇÃO 01: INÍCIO -->
+  <main>
+    <section id="inicio" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Guarabira • Brejo Paraibano — Desde 2019</p>
+          <h1 class="hero-title">
+            Encantando e Realizando Sonhos <em>Através da Dança!</em>
+          </h1>
+          <p class="hero-subtitle">
+            Escola de ballet e formação artística para crianças, adolescentes e adultos, aliando excelência técnica, metodologia <strong>Psicopedagodança</strong> e certificação internacional <strong>AAB - NY</strong>.
+          </p>
+
+          <ul class="hero-badges">
+            <li>Escola de Ballet Certificada AAB - NY</li>
+            <li>Credenciada pela Psicopedagodança</li>
+            <li>Av. Dom Pedro II, 228, 3º Andar — Centro, Guarabira/PB</li>
+          </ul>
+
+          <div class="hero-actions">
+            <a href="#modalidades" class="btn btn-gold">Conhecer Modalidades &amp; Grade</a>
+            <a
+              href="https://api.whatsapp.com/send?phone=5583991488967&text=Ol%C3%A1!%20Quero%20conhecer%20as%20turmas%20e%20agendar%20uma%20aula%20experimental."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline"
+            >
+              Agendar pelo WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-media reveal">
+          <div class="media-frame hero-frame">
+            <!-- /* foto principal de destaque do Studio Rafaela Muñoz (Img/hero-studio.jpg) */ -->
+            <div class="media-placeholder">
+              <span class="placeholder-tag">Espaço Reservado — Foto Institucional</span>
+              <strong>Studio Rafaela Muñoz</strong>
+              <p>Insira a foto principal de dança ou da sede em Guarabira - PB.</p>
+            </div>
+          </div>
+          <div class="hero-floating-card">
+            <span class="floating-kicker">Destaque Anual</span>
+            <strong>Dream Celebration</strong>
+            <small>Formação artística, dramaturgia e palco</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAIXA DE NÚMEROS / DIFERENCIAIS -->
+      <div class="container stats-strip reveal">
+        <div class="stat-item">
+          <span class="stat-number" data-target="2019">2019</span>
+          <span class="stat-label">Ano de Fundação em Guarabira</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="15" data-suffix="+">15+</span>
+          <span class="stat-label">Modalidades e Formatos de Aula</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="2" data-suffix=" Salas">2 Salas</span>
+          <span class="stat-label">Estrutura Climatizada com Espelhos e Barras</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">AAB - NY</span>
+          <span class="stat-label">Certificação Internacional &amp; Psicopedagodança</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABA / SEÇÃO 02: O STUDIO (MISSÃO, VISÃO, VALORES E ESTRUTURA) -->
+    <section id="sobre" class="section section-cream">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 • Institucional &amp; Identidade</p>
+          <h2 class="section-title">Formação técnica, humana e sensível</h2>
+          <p class="section-lead">
+            Fundado em 16 de novembro de 2019 por Rafaela Rocha Muñoz Pineda, o Studio Rafaela Muñoz promove o desenvolvimento físico, cognitivo, emocional e social por meio da dança.
+          </p>
+        </div>
+
+        <div class="about-layout">
+          <div class="about-story reveal">
+            <p>
+              Com sede na <strong>Avenida Dom Pedro II, n° 228, 3º andar, Centro, Guarabira/PB</strong> (Prédio da Padaria Cristal), o Studio atende alunos de Guarabira e municípios do Brejo Paraibano, além de atuar em parceria com instituições de ensino regular.
+            </p>
+            <p>
+              O ensino alia o rigor técnico do ballet e de outras modalidades ao acompanhamento pedagógico individual, respeitando cada faixa etária e etapa de aprendizagem.
+            </p>
+
+            <div class="structure-box">
+              <h3>Estrutura Física da Unidade Guarabira - PB</h3>
+              <ul>
+                <li><strong>Sala principal de ballet:</strong> aproximadamente 45 m² (9 × 5 m).</li>
+                <li><strong>Segunda sala:</strong> aproximadamente 25 m² (5 × 5 m).</li>
+                <li><strong>Equipamentos:</strong> barras de ballet, espelhos, climatização, som e iluminação.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mvv-grid reveal">
+            <article class="mvv-card">
+              <span class="mvv-badge">Missão</span>
+              <h3>Encantar e Realizar Sonhos</h3>
+              <p>
+                Encantar e realizar sonhos através da dança, proporcionando experiências que contribuam para a formação artística e humana dos alunos.
+              </p>
+            </article>
+
+            <article class="mvv-card">
+              <span class="mvv-badge">Visão</span>
+              <h3>Referência no Brejo Paraibano</h3>
+              <p>
+                Consolidar-se como referência no ensino da dança e na produção artística no Brejo Paraibano, ampliando o acesso à arte com excelência.
+              </p>
+            </article>
+
+            <article class="mvv-card mvv-values">
+              <span class="mvv-badge">Valores</span>
+              <h3>Pilares do Studio</h3>
+              <ul class="values-list">
+                <li>Excelência artística e pedagógica</li>
+                <li>Respeito à individualidade</li>
+                <li>Disciplina e responsabilidade</li>
+                <li>Acolhimento e empatia</li>
+                <li>Criatividade e expressão artística</li>
+                <li>Ética e profissionalismo</li>
+                <li>Valorização da cultura e da arte</li>
+                <li>Compromisso com alunos e famílias</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABA / SEÇÃO 03: MODALIDADES & GRADE 2027 -->
+    <section id="modalidades" class="section section-white">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">02 • Ensino, Portfólio &amp; Grade 2027</p>
+          <h2 class="section-title">Modalidades e Grade de Horários</h2>
+          <p class="section-lead">
+            Turmas estruturadas por faixa etária e nível técnico, com grade prevista para 2027 na unidade de Guarabira - PB (sujeita à formação de turmas e planejamento anual).
+          </p>
+        </div>
+
+        <div class="portfolio-panel reveal">
+          <div class="panel-header">
+            <h3>Portfólio de Modalidades e Atividades</h3>
+            <div class="filter-pills" role="tablist" aria-label="Filtrar modalidades">
+              <button type="button" class="filter-pill active" data-category="todas">Todas</button>
+              <button type="button" class="filter-pill" data-category="ballet">Ballet</button>
+              <button type="button" class="filter-pill" data-category="jazz-sapateado">Jazz &amp; Sapateado</button>
+              <button type="button" class="filter-pill" data-category="formacao">Formação &amp; Projetos</button>
+            </div>
+          </div>
+
+          <div id="modalities-list" class="modalities-grid"></div>
+        </div>
+
+        <div class="schedule-panel reveal">
+          <div class="panel-header">
+            <div>
+              <h3>Grade de Horários — Previsão 2027</h3>
+              <p class="panel-note">
+                Unidade Guarabira - PB. Horários indicam o início das aulas (excluindo atividades do TNB, ENSL ou EPSA).
+              </p>
+            </div>
+            <div class="day-tabs" role="group" aria-label="Filtrar grade por dia">
+              <button type="button" class="day-tab active" data-day="todos">Todos os Dias</button>
+              <button type="button" class="day-tab" data-day="terca">Terça</button>
+              <button type="button" class="day-tab" data-day="quinta">Quinta</button>
+              <button type="button" class="day-tab" data-day="sexta">Sexta</button>
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="schedule-table">
+              <thead>
+                <tr>
+                  <th>Modalidade</th>
+                  <th>Faixa Etária</th>
+                  <th>Dias</th>
+                  <th>Horário</th>
+                  <th>Ação</th>
+                </tr>
+              </thead>
+              <tbody id="schedule-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABA / SEÇÃO 04: ESPETÁCULOS & PROJETOS -->
+    <section id="espetaculos" class="section section-cream">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">03 • Palco, Certificação &amp; Cultura</p>
+          <h2 class="section-title">Espetáculos, Projetos e Vivências</h2>
+          <p class="section-lead">
+            A vivência artística vai além da sala de aula com produções cênicas, avaliações internacionais e projetos educacionais.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="media-frame project-frame">
+              <!-- /* foto do espetáculo Dream Celebration (Img/dream-celebration.jpg) */ -->
+              <div class="media-placeholder compact">
+                <span class="placeholder-tag">Foto de Espetáculo</span>
+                <strong>Dream Celebration</strong>
+                <p>Edição 2026: Encanto: A Casa que Dança (07/11/2026).</p>
+              </div>
+            </div>
+            <h3>Dream Celebration</h3>
+            <p>
+              Principal espetáculo anual do Studio, reunindo direção artística, roteiro, criação coreográfica, dramaturgia, figurinos, cenografia, iluminação e recursos audiovisuais.
+            </p>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="media-frame project-frame">
+              <!-- /* foto de aula ou avaliação AAB - NY / Psicopedagodança (Img/aula-certificacao.jpg) */ -->
+              <div class="media-placeholder compact">
+                <span class="placeholder-tag">Foto de Aula / Certificação</span>
+                <strong>Performance Awards — AAB - NY</strong>
+                <p>Avaliação técnica e certificação internacional dos bailarinos.</p>
+              </div>
+            </div>
+            <h3>Performance Awards (AAB - NY)</h3>
+            <p>
+              Programa internacional de avaliação e reconhecimento do desenvolvimento técnico e artístico, aliado à metodologia Psicopedagodança.
+            </p>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="media-frame project-frame">
+              <!-- /* foto de projetos especiais ou Ballet nas Escolas (Img/projetos-especiais.jpg) */ -->
+              <div class="media-placeholder compact">
+                <span class="placeholder-tag">Foto de Projetos &amp; Aulas</span>
+                <strong>Semana Viva a Dança &amp; Parcerias</strong>
+                <p>Summer Dance, oficinas, vivências e Ballet nas Escolas.</p>
+              </div>
+            </div>
+            <h3>Projetos Especiais &amp; Parcerias</h3>
+            <p>
+              Inclui Semana Viva a Dança, Summer Dance, Ballet nas Escolas em instituições parceiras, festivais, workshops e apresentações culturais.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABA / SEÇÃO 05: MATRÍCULAS & CONTATO -->
+    <section id="contato" class="section section-white">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">04 • Atendimento, Matrículas &amp; Localização</p>
+          <h2 class="section-title">Agende sua Aula Experimental</h2>
+          <p class="section-lead">
+            Atendimento digital e presencial na sede em Guarabira - PB. Preencha os dados abaixo para montar sua mensagem direta no WhatsApp do Studio.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <h3>Canais Oficiais — Studio Rafaela Muñoz</h3>
+            <ul class="contact-list">
+              <li>
+                <strong>Endereço:</strong>
+                <span>Av. Dom Pedro II, n° 228, 3º andar, Centro, Guarabira/PB (Prédio da Padaria Cristal)</span>
+              </li>
+              <li>
+                <strong>WhatsApp Comercial:</strong>
+                <a href="https://api.whatsapp.com/send?phone=5583991488967" target="_blank" rel="noopener noreferrer">
+                  (83) 99148-8967
+                </a>
+              </li>
+              <li>
+                <strong>Instagram:</strong>
+                <a href="https://www.instagram.com/studiorafaelamunoz/" target="_blank" rel="noopener noreferrer">
+                  @studiorafaelamunoz
+                </a>
+              </li>
+              <li>
+                <strong>TikTok:</strong>
+                <a href="https://www.tiktok.com/@rafaelamunozz" target="_blank" rel="noopener noreferrer">
+                  @rafaelamunozz
+                </a>
+              </li>
+              <li>
+                <strong>E-mail Institucional:</strong>
+                <a href="mailto:studiorafaelamunoz@gmail.com">studiorafaelamunoz@gmail.com</a>
+              </li>
+            </ul>
+
+            <div class="steps-box">
+              <h4>Como Funciona o Atendimento</h4>
+              <ol>
+                <li>Contato via WhatsApp ou Instagram e escolha da modalidade/horário.</li>
+                <li>Agendamento e realização da aula experimental.</li>
+                <li>Formalização da matrícula, plano, uniforme e entrada na turma.</li>
+              </ol>
+            </div>
+          </div>
+
+          <form id="trial-form" class="trial-form reveal" novalidate>
+            <h3>Solicitar Aula Experimental ou Matrícula</h3>
+
+            <div class="form-field">
+              <label for="aluno-nome">Nome do Aluno ou Responsável *</label>
+              <input id="aluno-nome" name="alunoNome" type="text" required placeholder="Ex.: Maria Clara / Responsável" />
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="aluno-idade">Idade / Faixa Etária *</label>
+                <input id="aluno-idade" name="alunoIdade" type="text" required placeholder="Ex.: 8 anos ou Adulto" />
+              </div>
+              <div class="form-field">
+                <label for="aluno-telefone">Seu WhatsApp *</label>
+                <input id="aluno-telefone" name="alunoTelefone" type="tel" required placeholder="(83) 99999-9999" />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="modalidade-interesse">Modalidade / Turma de Interesse</label>
+              <select id="modalidade-interesse" name="modalidadeInteresse">
+                <option value="Ballet Preparatório (3 a 5 anos — Terça 17h)">Ballet Preparatório (3 a 5 anos — Terça 17h)</option>
+                <option value="Ballet Infantil Manhã (6 a 9 anos — Ter/Qui 10h30)">Ballet Infantil Manhã (6 a 9 anos — Ter/Qui 10h30)</option>
+                <option value="Ballet Infantil Tarde (6 a 9 anos — Ter/Qui 15h)">Ballet Infantil Tarde (6 a 9 anos — Ter/Qui 15h)</option>
+                <option value="Jazz Infantil (Ter/Qui 16h)">Jazz Infantil (Ter/Qui 16h)</option>
+                <option value="Ballet Juvenil (10 a 14 anos — Ter/Qui 19h)">Ballet Juvenil (10 a 14 anos — Ter/Qui 19h)</option>
+                <option value="Ballet Adulto Iniciante (Sexta 10h30)">Ballet Adulto Iniciante (Sexta 10h30)</option>
+                <option value="Ballet Adulto Básico (Ter/Qui 20h)">Ballet Adulto Básico (Ter/Qui 20h)</option>
+                <option value="Ballet Adulto Elementar (Sexta 20h)">Ballet Adulto Elementar (Sexta 20h)</option>
+                <option value="Jazz Adulto (Sexta 19h)">Jazz Adulto (Sexta 19h)</option>
+                <option value="Outras Modalidades / Aula Experimental">Outras Modalidades / Aula Experimental</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="observacoes">Observações ou Melhor Dia/Horário</label>
+              <textarea id="observacoes" name="observacoes" rows="3" placeholder="Conte se já fez dança ou qual dia prefere para aula experimental..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold btn-block">
+              Enviar Solicitação via WhatsApp
+            </button>
+
+            <p id="form-feedback" class="form-feedback hidden" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">Studio Rafaela Muñoz — SRM</p>
+        <p class="footer-copy">
+          Encantando e Realizando Sonhos Através da Dança! • Guarabira - PB
+        </p>
+        <p class="footer-meta">
+          CNPJ: 36.852.649/0001-88 • Av. Dom Pedro II, 228, 3º Andar, Centro, Guarabira/PB
+        </p>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://www.instagram.com/studiorafaelamunoz/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.tiktok.com/@rafaelamunozz" target="_blank" rel="noopener noreferrer">TikTok</a>
+        <a href="https://api.whatsapp.com/send?phone=5583991488967" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="mailto:studiorafaelamunoz@gmail.com">E-mail</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE VOLTAR AO TOPO -->
+  <button type="button" id="back-to-top" class="back-to-top" aria-label="Voltar ao topo">
+    ↑
+  </button>
+
+  <script type="module" src="Js/studio.js"></script>
+</body>
+</html>
