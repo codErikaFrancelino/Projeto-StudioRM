@@ -1,8 +1,10 @@
-<!-- ==========================================================================
-   README.MD — STUDIO RAFAELA MUÑOZ (SRM)
-   Projeto Front-end | Guarabira - PB
-   ==========================================================================
 
+   README.MD — STUDIO RAFAELA MUÑOZ (SRM)
+   Projeto Front-end | Guarabira - PB     
+   ------------------------------------------
+
+
+   
    SOBRE O PROJETO
    Aplicação web institucional e interativa desenvolvida para o Studio Rafaela
    Muñoz (SRM), escola de ballet e formação artística fundada em 16 de novembro
